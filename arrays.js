@@ -9,7 +9,8 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-  const newArray = [...array, element];  //immutable
+  const newArray = [...array, element];
+  return newArray; //immutable
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
