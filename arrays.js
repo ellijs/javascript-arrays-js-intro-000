@@ -1,3 +1,5 @@
+var chocolateBars = ["snickers", "hundres grand", "kitkat", "skkitles"]
+
 function addElementToBeggingOfArray(array, element) {
   const newArray = [...array, element]; // not modify the original
 }
