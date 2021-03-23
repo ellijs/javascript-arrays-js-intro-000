@@ -4,7 +4,6 @@ function addElementToBeggingOfArray(array, element) {
   const newArray = [element, ...array]; // immutable
 }
 
-
 function destructivelyAddElementToBeginningOfArray(array, element) {
   return array.unshift(element);  //mutable
 }
