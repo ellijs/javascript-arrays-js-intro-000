@@ -1,5 +1,5 @@
 function addElementToBeggingOfArray(array, element) {
-  const newArray = [...array, element]; // immutated
+  const newArray = [...array, element]; // not modify the original
 }
 
 
@@ -16,5 +16,12 @@ function destructivelyRemoveElementFromBeginningOfArray(array) {
 }
 
 function removeElementFromBeginningOfArray(array) {
-  return array.slice(1);   // should not mutate the original array
+  return array.slice(1);   // immutable. should not alter original array
 }
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  return array.slice(0, array.length - 1); // Immutable  .pop() mutable
+}
+
+//items.splice(1, 1)  at index 1, remove 1 item. Immutable
+//item.splice(1, 1, 6, 7) at index 1, remove 1, add 6 and 7
