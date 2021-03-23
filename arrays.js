@@ -11,7 +11,8 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-  var newArray//immutable
+  var newArray = [...array, element];  // immutable
+  return newArray;
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
