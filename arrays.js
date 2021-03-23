@@ -13,6 +13,10 @@ function addElementToEndOfArray(array, element) {
   const newArray = [...array, element];  //immutable
 }
 
+function destructivelyAddElementToEndOfArray(array, element) {
+  return array.push();
+}
+
 function destructivelyRemoveElementFromEndOfArray(array) {
   return array.pop();
 }
