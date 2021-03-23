@@ -1,16 +1,16 @@
 var chocolateBars = ["snickers", "hundres grand", "kitkat", "skkitles"]
 
 function addElementToBeggingOfArray(array, element) {
-  const newArray = [...array, element]; // not modify the original
+  const newArray = [element, ...array]; // immutable
 }
 
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  return array.unshift(element);  //mutated
+  return array.unshift(element);  //mutable
 }
 
 function addElementToEndOfArray(array, element) {
-  const newArray = [...array, element];
+  const newArray = [...array, element];  //immutable
 }
 
 function accessElementInArray(array, index) {
