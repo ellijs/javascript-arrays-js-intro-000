@@ -38,8 +38,12 @@ function removeElementFromBeginningOfArray(array) {
   return array.slice(1);   // immutable. should not alter original array
 }
 
-function destructivelyRemoveElementFromEndOfArray(array) {
+function removeElementFromEndOfArray(array) {
   return array.slice(0, array.length - 1); // Immutable  .pop() mutable
+}
+
+function destructivelyRemoveElementFromEndOfArray(array) {
+  return array.pop(); // mutable
 }
 
 //items.splice(1, 1)  at index 1, remove 1 item. Immutable
