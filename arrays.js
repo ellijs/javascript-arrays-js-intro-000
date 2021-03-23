@@ -43,7 +43,8 @@ function removeElementFromEndOfArray(array) {
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
-  return array.pop(); // mutable
+  array.pop(); // mutable
+  return array;
 }
 
 //items.splice(1, 1)  at index 1, remove 1 item. Immutable
