@@ -6,7 +6,11 @@ function addElementToBeggingOfArray(array, element) {
 
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  return array.push(element);  //mutated
+  return array.unshift(element);  //mutated
+}
+
+function addElementToEndOfArray(array, element) {
+  const newArray = [...array, element];
 }
 
 function accessElementInArray(array, index) {
