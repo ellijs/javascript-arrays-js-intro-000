@@ -11,12 +11,11 @@ function destructivelyAddElementToBeginningOfArray(array, element) {
 }
 
 function addElementToEndOfArray(array, element) {
-  const newArray = [...array, element];
-  return newArray; //immutable
+  //immutable
 }
 
 function destructivelyAddElementToEndOfArray(array, element) {
-  return array.push();
+  return array.push(element);
 }
 
 function destructivelyRemoveElementFromEndOfArray(array) {
