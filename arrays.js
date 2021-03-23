@@ -1,10 +1,10 @@
 function addElementToBeggingOfArray(array, element) {
-  const newArray = [...array, element];
+  const newArray = [...array, element]; // immutated
 }
 
 
 function destructivelyAddElementToBeginningOfArray(array, element) {
-  return array.push(element);
+  return array.push(element);  //mutated
 }
 
 function accessElementInArray(array, index) {
@@ -12,5 +12,9 @@ function accessElementInArray(array, index) {
 }
 
 function destructivelyRemoveElementFromBeginningOfArray(array) {
-  return array.shift();
+  return array.shift();   // mutated
+}
+
+function removeElementFromBeginningOfArray(array) {
+  return array.slice(1);   // should not mutate the original array
 }
